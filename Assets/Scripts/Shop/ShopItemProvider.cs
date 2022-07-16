@@ -1,26 +1,25 @@
 using System.Collections.Generic;
-using ScriptableObject;
+using ScriptableObject.Shop;
 using Shop.ShopItems;
 using UnityEngine;
 
 namespace Shop
 {
-	public class ShopItemProvider : MonoBehaviour
-	{
-		private readonly Dictionary<Item.TypeItem, BaseShopItem> _listPrefabs =
-			new Dictionary<Item.TypeItem, BaseShopItem>();
+    public class ShopItemProvider : MonoBehaviour
+    {
+        private readonly Dictionary<ShopItem.ShopItemType, BaseShopItem> _listPrefabs =
+            new Dictionary<ShopItem.ShopItemType, BaseShopItem>();
 
-		private void Awake()
-		{
-			_listPrefabs.Add(Item.TypeItem.Normal, Resources.Load<BaseShopItem>("Prefabs/itemNormal"));
-			_listPrefabs.Add(Item.TypeItem.Discount, Resources.Load<BaseShopItem>("Prefabs/itemDescount"));
-			_listPrefabs.Add(Item.TypeItem.NotForSale, Resources.Load<BaseShopItem>("Prefabs/itemNotForSale"));
-		}
+        private void Awake()
+        {
+            _listPrefabs.Add(ShopItem.ShopItemType.Normal, Resources.Load<BaseShopItem>("Prefabs/Shop/itemNormal"));
+            _listPrefabs.Add(ShopItem.ShopItemType.Discount, Resources.Load<BaseShopItem>("Prefabs/Shop/itemDiscount"));
+        }
 
-		public BaseShopItem GetItemData(Item.TypeItem typeItem)
-		{
-			_listPrefabs.TryGetValue(typeItem, out var value);
-			return value;
-		}
-	}
+        public BaseShopItem GetItemData(ShopItem.ShopItemType shopItemType)
+        {
+            _listPrefabs.TryGetValue(shopItemType, out var value);
+            return value;
+        }
+    }
 }

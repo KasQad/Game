@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8d403839ab233d43a6c80597c0f4dfb, type: 3}
-  m_Name: Chicken
+  m_Name: Cow15
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 3205a3a6d886a2c4fb7bfc36e2456ad0, type: 3}
-  title: Chicken
-  description: 123
-  weight: 3
-  cost: 300
-  typeItem: 0
-  discount: 0
-  onTrade: 0
+  icon: {fileID: 21300000, guid: 40f3473a9eebf8b4ea8bfeae6c8d97dd, type: 3}
+  title: Cow 15
+  description: Cow 15 desription
+  weight: 250
+  cost: 15000
+  shopItemType: 1
+  discount: 15
+  id: 2

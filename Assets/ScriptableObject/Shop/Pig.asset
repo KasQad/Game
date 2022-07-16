@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8d403839ab233d43a6c80597c0f4dfb, type: 3}
-  m_Name: Cow
+  m_Name: Pig
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 40f3473a9eebf8b4ea8bfeae6c8d97dd, type: 3}
-  title: Cow 1
-  description: Cow Cow Cow Cow Cow
-  weight: 500
-  cost: 20000
-  typeItem: 1
-  discount: 25
-  id: 0
+  icon: {fileID: 21300000, guid: d3546c2457c0ab040a8885060c28e93a, type: 3}
+  title: Pig
+  description: Pig Pig Pig Pig
+  weight: 200
+  cost: 5000
+  shopItemType: 0
+  discount: 10
+  id: 3
